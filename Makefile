@@ -12,7 +12,6 @@ default: markdown.html
 .Rmd.html:
 	R --no-save --no-restore --no-init-file --no-site-file \
 		-e 'library(knitr);knit2html("$<")'
-
 .Rmd.md:
 	R --no-save --no-restore --no-init-file --no-site-file \
 		-e 'library(knitr);knit("$<")'

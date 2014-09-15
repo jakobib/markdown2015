@@ -1,0 +1,11 @@
+# knitr-Beispiel
+
+```{r, echo=FALSE}
+voegel = read.csv('voegel.csv')
+gewicht = voegel$Gewicht
+```
+
+Eine Betrachtung `r nrow(voegel)` verschiedener Vogelarten zeigt, dass 
+flugfähige Vögel ein Gewicht zwischen `r min(gewicht)*1000`g und
+`r max(gewicht)`kg erreichen können.
+

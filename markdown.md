@@ -13,17 +13,23 @@ Wissenschaftliches Publizieren...
 
 Markdown ist eine Auszeichnungsprache für einfache Textdokumente, die mit dem
 Ziel entwickelt wurde, so einfach wie möglich lesbar und schreibbar zu sein. Da
-Markdown-Dokumente ausschließlich aus (Unicode-)Zeichen bestehen, wird zur
-Bearbeitung keine spezielle Software benötigt, sondern es reicht ein beliebiger
-Texteditor.
+Markdown-Dokumente ausschließlich aus (Unicode-)Zeichen bestehen reicht zur
+Bearbeitung ein beliebiger Texteditor. 
 
-Ursprünglich wurde Markdown von John Gruber und Aaron Swartz als einfache
-Alternative zur Erstellung von HTML-Texten entwickelt. ... 
-(siehe Aarons blog von 2004)
+Ursprünglich wurde Markdown 2004 von John Gruber und Aaron Swartz als einfache
+Alternative zur Erstellung von HTML-Texten entwickelt (Swartz 2004). Dazu
+lassen sich Dokumente in Markdown-Syntax mit einem Script nach HTML
+konvertiert. Ein solches Konvertierungsskript stellte Gruber zusammen mit der
+Spezifikation der Markdown-Syntax Ende 2004 bereit (Gruber 2004). Auf dieser
+Basis wurden in den folgenden Jahren zahlreiche Anwendungen entwickelt, die zur
+Popularität von Markdown beitrugen. Zu den größten Webseiten, bei denen Nutzer
+Kommentare und andere Inhalte in Markdown-Syntax verfassen können, zählen
+GitHub, Stack Exchange und reddit.
 
-* Herkunft
-* Es gibt inzwischen zahlreiche Markdown-Dialekte und Erweiterungen
-* Vereinheitlichung des Kerns mit Standard Markdown
+Da Gruber eine Weiterentwicklung von Markdown ablehnt und sein Standard einige
+Uneindeutigkeiten enthält, gibt es inzwischen verschiedene Markdown-Dialekte,
+die die Syntax um zusätzliche Elemente erweitern. Zur Vereinheitlichung wurde
+Ende 2014 deshalb der CommonMark-Standard geschaffen (MacFarlane 2014). 
 
 ## Bestandteile und Syntax
 
@@ -67,24 +73,59 @@ Alternative zur Erstellung von HTML-Texten entwickelt. ...
 
 # Markdown-Werkzeuge
 
+Im folgenden sollen einige Werkzeuge zur Erstellung von wissenschaftlichen
+Publikationen mit Markdown vorgestellt werden.
+
+Markdown-Editoren und das Konvertierungsprogram Pandoc.
+
 ## Markdown als Ausgangsformat für wissenschaftliche Publikationen
 
 Markdown -> Konvertierungsprogramm -> Druckfertiges Ausgabeformat oder HTML
 
 ## Markdown-Editoren
 
-* Einfacher Texteditor (kein Textverarbeitungsprogramm ("Wordprocessor") wie
-  Word!)
-* Reine Markdown-Editoren
-* IPhytonNotebook u.A.
+Zur Bearbeitung von Markdown-Dokumenten reicht ein beliebiger Texteditor wie
+zum Beispiel *Notepad++* unter Windows und *vim* unter Linux. Darüber hinaus
+gibt es inzwischen zahlreiche spezialisierte Markdown-Editoren mit zusätzlichen
+Funktionen wie Syntax-Highlighting, HTML-Preview und Synchronisierung mit
+Cloud-Diensten. Einige dieser Editoren müssen nicht erst installiert werden
+sondern laufen direkt im Browser, sei es als eigenständige Webanwendung oder
+durch die Bereicherung von bestehenden Webseiten um Markdown-Funktionalität.
+
+Welcher Markdown-Editor am Besten geeignet ist, hängt von den eigenen
+Anforderungen ab und lässt sich angesichts der raschen Entwicklung angebotener
+Software nicht abschließend beantworten. Der Wechsel zwischen verschiedenen
+Programmen ist allerdings relativ einfach möglich, da die Markdown-Syntax nicht
+an eine Software gebunden ist.
+
+Speziell für wissenschaftliches Schreiben ...
+
+* Authorea
+* IPhytonNotebook, RStudio
 
 ## Pandoc
 
-Konvertierung zwischen verschiedenen Dokumentformaten...
+Konvertierung zwischen verschiedenen Dokumentformaten.
 
-* Eingangsformate: ...
-* Ausgangsformate: ...
-* Templates für Layout-Anpassungen
+* Ausgangsformate: HTML, PDF, ePUB...
+* Templates für Layout-Anpassungen zur einheitlichen Gestaltung von Dokumenten
+
+Neben der Erstellung von Dokumenten in verschiedenen
+Ausgabeformaten  kann Pandoc auch vorhandene Dokumente nach Markdown-Syntax
+konvertieren. Seit Version 1.13 bietet das Programm neben HTML, LaTeX und
+MediaWiki-Syntax auch Das DOCX als Importformat an.
+
+Microsoft Word, Open/Libre Office 
+
+
+HTML
+
+html, json, latex, MediaWiki
+
+Pandoc eignet sich daher auch dafür
+
+
+DOCX
 
 # Ausblick & Zusammenfassung
 

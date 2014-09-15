@@ -1,5 +1,7 @@
-Skizze zu einem einfachen, praxisorientierten Artikel (HOWTO mit Hintergrund)
-über die Rolle von Markdown für die Erstellung von wissenschaftlichen
-Publikationen.
+Skizze zu einem einfachen, praxisorientierten, deutschsprachigen Artikel über
+die Rolle von Markdown für die Erstellung von wissenschaftlichen Publikationen.
 
-Zielgruppe: deutschsprachige Autoren und Herausgeber von Wissenschafts- und Fachliteratur
+Die primäre Zielgruppe sind deutschsprachige Autoren und Herausgeber von
+Wissenschafts- und Fachliteratur.
+
+*Mitautoren willkommen!*
