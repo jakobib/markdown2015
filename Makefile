@@ -1,10 +1,17 @@
-.SUFFIXES: .md .Rmd .html
+.SUFFIXES: .md .pdf .Rmd .html
 
-default: markdown.html
+default: markdown.html markdown.pdf
+
+OPTIONS=-s -S -N
 
 # benötigt pandoc
 .md.html:
-	pandoc -s -S -t html5 $< -o $@
+	cat $(patsubst %.md,%.yml,$<) $< |\
+	   	pandoc -s -S -N -t html5 -o $@ - --bibliography $(patsubst %.md,%.bib,$<)
+# benötigt zusätzlich LaTeX
+.md.pdf:
+	cat $(patsubst %.md,%.yml,$<) $< |\
+	   	pandoc -s -S -N -o $@ - --bibliography $(patsubst %.md,%.bib,$<)
 
 # benötigt R/qtl (www.rqtl.org) und knitr. Installation in R: 
 #  install.packages("qtl")
