@@ -119,6 +119,18 @@ Pandoc auch vorhandene Dokumente nach Markdown-Syntax konvertieren. Seit
 Version 1.13 bietet das Programm neben HTML, LaTeX und MediaWiki-Syntax auch
 Das DOCX als Importformat an.
 
+# Stand der wissenschaftlichen Markdown-Nutzung
+
+* Zunehmend als Alternative zu LaTeX, allerdings noch eher einzele Autoren
+* Wie Knuth bei TeX hat der MacFarlane Pandoc auch als Wissenschaftler für 
+  seine eigene Publikationstätigkeit entwickelt
+* LIBREAS & Informationspraxis (geplant) nutzen Markdown, um Artikel
+  medienneutral bereitzustellen (gibt es weitere?!)
+* Mardown-for-Science / Scholarly Markdown Workshop
+* BeyondPDF-Initiativen, um von der Fokussierung auf die Druckversion
+  wegzukommen
+* ...
+
 # Zusammenfassung & Ausblick
 
 *Zusammenfassung, Bewertung, Ausblick...*
