@@ -42,7 +42,7 @@ GitHub, Stack Exchange und reddit.
 Da Gruber eine Weiterentwicklung von Markdown ablehnt und sein Standard einige
 Uneindeutigkeiten enthält, gibt es inzwischen verschiedene Markdown-Dialekte,
 die die Syntax um zusätzliche Elemente erweitern. Zur Vereinheitlichung wurde
-Ende 2014 deshalb der CommonMark-Standard geschaffen (MacFarlane 2014). 
+Ende 2014 deshalb der CommonMark-Standard geschaffen [@MacFarlane2014].
 
 ## Bestandteile und Syntax
 
@@ -142,7 +142,7 @@ Medienneutrales Publizieren mit Scholarly Markdown...
 * Trend: Reproduzierbare Forschung
     * Quelltext und Beschreibung in einem Dokument 
       (z.B. Berechnungen in einem Fachartikel)
-    * Beispiel: R markdown mit knitr
+    * Beispiel: R markdown mit knitr [@Xie2014; @Baumer2014; @Gandrud2013]
 * Nachteile von Markdown (u.A. kein WYSIWYG)
 * Verweise auf Beispiele und andere Tutorials
 * ...
