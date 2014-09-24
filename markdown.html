@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ngerman">
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Wissenschaftliches Publizieren mit Markdown</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header>
+<h1 class="title">Wissenschaftliches Publizieren mit Markdown</h1>
+</header>
+<h1 id="einleitung"><span class="header-section-number">1</span> Einleitung</h1>
+<p><em>Einleitung…</em></p>
+<h1 id="wissenschaftliches-publizieren"><span class="header-section-number">2</span> Wissenschaftliches Publizieren</h1>
+<p><em>Allgemeines zu wissenschaftlichem Publizieren (aktueller Stand)…</em></p>
+<ul>
+<li>Verlage verlangen in der Regel druckfertiges Manuskript</li>
+<li>In vielen Naturwissenschaften ist LaTeX de-facto Standard.</li>
+<li>Nachteile der aktuellen Situation</li>
+<li>Markdown als Alternative
+<ul>
+<li>Artikel und Vortragsfolien</li>
+<li>Vereinzelt schon Dissertationen und Bücher in Markdown</li>
+<li>Initiative zur Entwicklung von “Scholarly Markdown”</li>
+</ul></li>
+</ul>
+<h1 id="markdown"><span class="header-section-number">3</span> Markdown</h1>
+<p>Markdown ist eine Auszeichnungsprache für einfache Textdokumente, die mit dem Ziel entwickelt wurde, so einfach wie möglich lesbar und schreibbar zu sein. Verglichen mit anderen Auszeichnungssprachen kommt die Markdown-Syntax mit wenigen Sonderzeichen aus und folgt in der Regel üblichen Gepflogenheiten (siehe Tabelle 1 und das folgende Kapitel). Da Markdown-Dokumente ausschließlich aus (Unicode-)Zeichen bestehen reicht zur Bearbeitung ein beliebiger Texteditor.</p>
+<table>
+<caption>Hervorhebung eines Wortes als <strong>fett</strong> in verschiedenen Auszeichnungsprachen</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">HTML</th>
+<th style="text-align: left;">TEI</th>
+<th style="text-align: left;">LaTeX</th>
+<th style="text-align: left;">Markdown</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>&lt;b&gt;fett&lt;/b&gt;</code></td>
+<td style="text-align: left;"><code>&lt;hi rend=&quot;bold&quot;&gt;fett&lt;/b&gt;</code></td>
+<td style="text-align: left;"><code>\textbf{fett}</code></td>
+<td style="text-align: left;"><code>**fett**</code></td>
+</tr>
+</tbody>
+</table>
+<p>Ursprünglich wurde Markdown 2004 von John Gruber und Aaron Swartz als einfache Alternative zur Erstellung von HTML-Texten entwickelt <span class="citation" data-cites="Swartz2004">(Swartz 2004)</span>. Dazu lassen sich Dokumente in Markdown-Syntax mit einem Script nach HTML konvertiert. Ein solches Konvertierungsskript stellte Gruber zusammen mit der Spezifikation der Markdown-Syntax Ende 2004 bereit <span class="citation" data-cites="Gruber2004">(Gruber 2004)</span>. Auf dieser Basis wurden in den folgenden Jahren zahlreiche Anwendungen entwickelt, die zur Popularität von Markdown beitrugen. Zu den größten Webseiten, bei denen Nutzer Kommentare und andere Inhalte in Markdown-Syntax verfassen können, zählen GitHub, Stack Exchange und reddit.</p>
+<p>Da Gruber eine Weiterentwicklung von Markdown ablehnt und sein Standard einige Uneindeutigkeiten enthält, gibt es inzwischen verschiedene Markdown-Dialekte, die die Syntax um zusätzliche Elemente erweitern. Zur Vereinheitlichung wurde Ende 2014 der CommonMark-Standard geschaffen <span class="citation" data-cites="MacFarlane2014">(MacFarlane 2014)</span>.</p>
+<h2 id="bestandteile-und-syntax"><span class="header-section-number">3.1</span> Bestandteile und Syntax</h2>
+<p>Markdown abstrahiert weitgehend von visuellen Eigenschaften wie Schriftart, Zeilenabstand und Blocksatz. Stattdessen konzentriert sich die Syntax auf die wesentlichen Bestandteile eines Textdokumentes.</p>
+<p><em>Übersicht der Markdown-Syntax…</em></p>
+<h3 id="block-elemente"><span class="header-section-number">3.1.1</span> Block-Elemente</h3>
+<ul>
+<li>Absätze</li>
+<li>Überschriften</li>
+<li>Listen</li>
+<li>Code-Abschnitte</li>
+<li>Zitat-Abschnitte</li>
+<li>Horizontale Linie</li>
+</ul>
+<h3 id="inline-auszeichnung"><span class="header-section-number">3.1.2</span> Inline-Auszeichnung</h3>
+<p>Textformatierung u.A.</p>
+<ul>
+<li>Fett</li>
+<li>Kursiv</li>
+<li>Code</li>
+<li>Links und URLs</li>
+<li>Zeilenumbrüche</li>
+<li>Bilder (können auch als Block-Elemente verwendet werden)</li>
+<li>strike/Hoch/tiefstellung (erweiterung)</li>
+<li>Link-Referenzen</li>
+<li>Sonstige Elemente
+<ul>
+<li>Entities</li>
+<li>Escape</li>
+<li>HTML</li>
+</ul></li>
+</ul>
+<h2 id="erweiterungen-für-wissenschaftliches-publizieren"><span class="header-section-number">3.2</span> Erweiterungen für wissenschaftliches Publizieren</h2>
+<p><em>Zusätzliche Bestandteile…</em></p>
+<ul>
+<li>Fußnoten</li>
+<li>Interne Verweise</li>
+<li>Tabellen</li>
+<li>Abbildungs- und Tabellentitel</li>
+<li>Mathematische Formeln</li>
+<li>Zitationen und Literaturverzeichnis</li>
+<li>Dynamische Elemente (IPhyonNotebook, Kramdown…)</li>
+</ul>
+<h1 id="markdown-werkzeuge"><span class="header-section-number">4</span> Markdown-Werkzeuge</h1>
+<p><em>Einleitung dieses Kapitels…</em></p>
+<h2 id="markdown-editoren"><span class="header-section-number">4.1</span> Markdown-Editoren</h2>
+<p>Zur Bearbeitung von Markdown-Dokumenten reicht ein beliebiger Texteditor wie zum Beispiel TextPad oder Notepad++ unter Windows und vim unter Linux. Darüber hinaus gibt es inzwischen zahlreiche spezialisierte Markdown-Editoren mit zusätzlichen Funktionen wie Syntax-Highlighting, HTML-Preview und Synchronisierung mit Cloud-Diensten. Einige dieser Editoren müssen nicht erst installiert werden sondern laufen direkt im Browser, sei es als eigenständige Webanwendung oder durch die Bereicherung von bestehenden Webseiten um Markdown-Funktionalität.</p>
+<p>Welcher Markdown-Editor am Besten geeignet ist, hängt von den eigenen Anforderungen ab und lässt sich angesichts der raschen Entwicklung angebotener Software nicht abschließend beantworten. Der Wechsel zwischen verschiedenen Programmen ist allerdings relativ einfach möglich, da die Markdown-Syntax nicht an eine Software gebunden ist.</p>
+<p><em>Weitere Editoren speziell für wissenschaftliches Schreiben …</em></p>
+<ul>
+<li>Authorea</li>
+<li>IPhytonNotebook, RStudio</li>
+<li>…?</li>
+</ul>
+<h2 id="pandoc"><span class="header-section-number">4.2</span> Pandoc</h2>
+<p><em>Pandoc zur Konvertierung zwischen verschiedenen Dokumentformaten…</em></p>
+<ul>
+<li>Ausgangsformate: HTML, PDF, ePUB…</li>
+<li>Templates für Layout-Anpassungen zur einheitlichen Gestaltung von Dokumenten</li>
+</ul>
+<p>Neben der Erstellung von Dokumenten in verschiedenen Ausgabeformaten kann Pandoc auch vorhandene Dokumente nach Markdown-Syntax konvertieren. Seit Version 1.13 bietet das Programm neben HTML, LaTeX und MediaWiki-Syntax auch Das DOCX als Importformat an.</p>
+<p>Beispiele für Bücher, die mit Markdown und Pandoc erstellt wurden: <span class="citation" data-cites="Kofler2013">Kofler (2013)</span>, <span class="citation" data-cites="Voss2014">Voß (2014)</span>, …</p>
+<h1 id="stand-der-wissenschaftlichen-markdown-nutzung"><span class="header-section-number">5</span> Stand der wissenschaftlichen Markdown-Nutzung</h1>
+<ul>
+<li>Zunehmend als Alternative zu LaTeX, allerdings noch eher einzele Autoren</li>
+<li>Wie Knuth bei TeX hat der MacFarlane Pandoc auch als Wissenschaftler für seine eigene Publikationstätigkeit entwickelt</li>
+<li>LIBREAS &amp; Informationspraxis (geplant) nutzen Markdown, um Artikel medienneutral bereitzustellen (gibt es weitere?!)</li>
+<li>Mardown-for-Science / Scholarly Markdown Workshop</li>
+<li>BeyondPDF-Initiativen, um von der Fokussierung auf die Druckversion wegzukommen</li>
+<li>…</li>
+</ul>
+<h1 id="zusammenfassung-ausblick"><span class="header-section-number">6</span> Zusammenfassung &amp; Ausblick</h1>
+<p><em>Zusammenfassung, Bewertung, Ausblick…</em></p>
+<p>Markdown als Ausgangsformat für wissenschaftliche Publikationen, Medienneutrales Publizieren mit Scholarly Markdown…</p>
+<ul>
+<li>Scholarly Markdown</li>
+<li>Trend: Reproduzierbare Forschung
+<ul>
+<li>Quelltext und Beschreibung in einem Dokument (z.B. Berechnungen in einem Fachartikel)</li>
+<li>Beispiel: R markdown mit knitr <span class="citation" data-cites="Xie2014 Baumer2014 Gandrud2013">(Xie 2014; Baumer et al.; Gandrud 2013)</span></li>
+</ul></li>
+<li>Nachteile von Markdown (u.A. kein WYSIWYG)</li>
+<li>Verweise auf Beispiele und andere Tutorials</li>
+<li>…</li>
+</ul>
+<p>Abbildung:<br />Markdown<br />→ Konvertierungsprogramm<br />→ Druckfertiges Ausgabeformat oder HTML</p>
+<div class="references">
+<h1>Literatur</h1>
+<p>Baumer, Ben, Mine Cetinkaya-Rundel, Andrew Bray, Linda Loi, and Nicholas J. Horton. “R Markdown: Integrating A Reproducible Analysis Tool into Introductory Statistics.” <em>Technology Innovations in Statistics Education</em> 8 (1).</p>
+<p>Gandrud, C. 2013. <em>Reproducible Research with R and RStudio</em>. Chapman &amp; Hall/CRC.</p>
+<p>Gruber. 2004. “Markdown.” <a href="http://daringfireball.net/projects/markdown">http://daringfireball.net/projects/markdown</a>.</p>
+<p>Knuth, Donald E. 1984. “Literate Programming.” <em>The Computer Journal</em> (27): 97–111.</p>
+<p>Kofler, Michael. 2013. <em>Markdown Und Pandoc</em>. ebooks.kofler. <a href="http://kofler.info/ebooks/markdown_pandoc/">http://kofler.info/ebooks/markdown_pandoc/</a>.</p>
+<p>MacFarlane, John. 2014. “CommonMark Spec Version 1.” <a href="http://spec.commonmark.org/">http://spec.commonmark.org/</a>.</p>
+<p>Simon, Norbert. 2014. “Markdown Fix Erklärt.” <a href="http://blog.nosi.de/statisch/markdown">http://blog.nosi.de/statisch/markdown</a>.</p>
+<p>Swartz, Aaron. 2004. “Markdown.” <a href="http://www.aaronsw.com/weblog/001189">http://www.aaronsw.com/weblog/001189</a>.</p>
+<p>Voß, Jakob. 2014. “Collaborative Creation of a Wikidata Handbook.” In <em>OpenSym 2014 Conference</em>. doi:<a href="http://dx.doi.org/10.5281/zenodo.11249">10.5281/zenodo.11249</a>.</p>
+<p>Xie, Y. 2014. <em>Dynamic Documents with R and Knitr</em>. Chapman &amp; Hall/CRC.</p>
+</div>
+</body>
+</html>
