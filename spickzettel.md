@@ -3,6 +3,20 @@ Auf Deutsch weniger, z.B.:
 
 <http://www.heise.de/mac-and-i/artikel/Schreiben-mit-Markdown-am-Mac-und-unter-iOS-2105025.html#cheatsheet>
 
+-----------------------------    ----------------
+ Markdown                         Ergebnis
+-----------------------------    ----------------
+ `*kursiv* oder _kursiv_`         *kursiv*
+
+ `**fett* oder _fett_`            **fett**
+
+ `# Überschrift`\
+ ...
+-----------------------------    ----------------
+
+**Absätze** werden durch Leerzeilen getrennt. Zwei Leerzeichen (oder bei
+einigen Markdown-Erweiterungen ein Backslash) am Ende einer Zeile erzeugen
+einen harten Umbruch.
 # Markdown-Spickzettel
 
 ## Überschriften
