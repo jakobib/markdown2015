@@ -22,3 +22,19 @@ OPTIONS=-s -S -N
 .Rmd.md:
 	R --no-save --no-restore --no-init-file --no-site-file \
 		-e 'library(knitr);knit("$<")'
+
+.PHONY: git-clean
+
+git-clean:
+	@if git status --porcelain 2>/dev/null | grep -q .; then git status; exit 1; fi
+
+gh-pages: git-clean markdown.html markdown.pdf
+	rm -rf tmp
+	mkdir tmp
+	mv markdown.html tmp 
+	mv markdown.pdf tmp 
+	git checkout gh-pages
+	mv tmp/* .; rmdir tmp
+	git add markdown.html markdown.pdf
+	git commit -m "update"
+	git checkout master
