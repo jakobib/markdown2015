@@ -86,13 +86,15 @@ Ende 2014 deshalb der CommonMark-Standard geschaffen (MacFarlane 2014).
 
 ## Markdown-Editoren
 
-Zur Bearbeitung von Markdown-Dokumenten reicht ein beliebiger Texteditor wie
-zum Beispiel TextPad oder Notepad++ unter Windows und vim unter Linux.  Darüber
-hinaus gibt es inzwischen zahlreiche spezialisierte Markdown-Editoren mit
-zusätzlichen Funktionen wie Syntax-Highlighting, HTML-Preview und
-Synchronisierung mit Cloud-Diensten. Einige dieser Editoren müssen nicht erst
-installiert werden sondern laufen direkt im Browser, sei es als eigenständige
-Webanwendung oder durch die Bereicherung von bestehenden Webseiten um
+Zur Bearbeitung von Markdown-Dokumenten reicht ein beliebiger
+Texteditor wie zum Beispiel TextPad oder Notepad++ unter Windows und
+vim unter Linux.  Darüber hinaus gibt es inzwischen zahlreiche
+spezialisierte Markdown-Editoren mit zusätzlichen Funktionen wie
+Syntax-Highlighting, HTML-Preview und Synchronisierung mit
+Cloud-Diensten. Einige dieser Editoren müssen nicht erst installiert
+werden sondern laufen direkt im Browser, sei es als eigenständige
+Webanwendung^[Beispiele für webbasierte Markdown-Editoren: http://dillinger.io/, http://prose.io/, https://notex.ch/, http://markable.in/, http://slhck.info/markdown/, https://jgm.github.io/stmd/js/, https://jbt.github.io/markdown-editor/, http://markdown.pioul.fr/ uva.]
+oder durch die Bereicherung von bestehenden Webseiten um
 Markdown-Funktionalität.
 
 Welcher Markdown-Editor am Besten geeignet ist, hängt von den eigenen
@@ -105,6 +107,7 @@ an eine Software gebunden ist.
 
 * Authorea
 * IPhytonNotebook, RStudio
+* notex.ch
 * ...?
 
 ## Pandoc
