@@ -6,6 +6,17 @@
 
 *Allgemeines zu wissenschaftlichem Publizieren (aktueller Stand)...*
 
+Die Landschaft des wissenschaftlichen Publizierens ist sehr heterogen. Die Publikationspraxis ist sehr unterschiedlich
+
+* in der Publikationsfrequenz
+* in der Publikationserstellung
+* in dem Publikationszugang.
+
+Diese hängen stark von der Fachdisziplin oder dem ab. Informatiker, Naturwissenschaftler und Mathematiker
+benutzen i.d.R. Latex zur Publikationserstellung. In anderen Fachgebieten wird Word bevorzugt. Zudem haben
+Verlage ihre eigenen Vorlagen, mit denen die Publikationen zu erstellen sind. Es muss betont werden, dass diese Techniken auf ein druckfertiges Manuskript abzielen. Eine parallele Publikation in einem anderen 
+Format (wie z.b. HTML) wird kaum praktiziert.
+
 * Verlage verlangen in der Regel druckfertiges Manuskript
 * In vielen Naturwissenschaften ist LaTeX de-facto Standard.
 * Nachteile der aktuellen Situation
@@ -38,7 +49,8 @@ Spezifikation der Markdown-Syntax Ende 2004 bereit [@Gruber2004]. Auf dieser
 Basis wurden in den folgenden Jahren zahlreiche Anwendungen entwickelt, die zur
 Popularität von Markdown beitrugen. Zu den größten Webseiten, bei denen Nutzer
 Kommentare und andere Inhalte in Markdown-Syntax verfassen können, zählen
-GitHub, Stack Exchange und reddit.
+[GitHub](http://github.com), [Stack Exchange](http://stackexchange.com/) 
+und [reddit](http://www.reddit.com/).
 
 Da Gruber eine Weiterentwicklung von Markdown ablehnt und sein Standard einige
 Uneindeutigkeiten enthält, gibt es inzwischen verschiedene Markdown-Dialekte,
@@ -91,6 +103,20 @@ Textformatierung u.A.
 * Zitationen und Literaturverzeichnis
 * Dynamische Elemente (IPhyonNotebook, Kramdown...)
 
+### Mathematische Formeln
+
+In vielen ingenieur- und naturwissenschaften, in der Mathematik und in der Informatik ist die
+Darstellung mathematischer Formeln von essentieller Bedeutung. Daher werden diese Aspekte und hier näher beleuchtet. [@Kr
+
+Es lassen sich die üblichen Latex-Befehle verwenden. Gekennzeichnet wird ein Latex-Befehl mit . So wird der Befehl
+
+$$\int_0^{\infty}f(x)dx$$
+
+$$x=x+1*\zeta$$
+
+so lassen sich math. Elemente in Markdown darstellen.
+
+
 # Markdown-Werkzeuge
 
 *Einleitung dieses Kapitels...*
@@ -138,12 +164,12 @@ Beispiele für Bücher, die mit Markdown und Pandoc erstellt wurden:
 
 # Stand der wissenschaftlichen Markdown-Nutzung
 
-* Zunehmend als Alternative zu LaTeX, allerdings noch eher einzele Autoren
+* Zunehmend als Alternative zu LaTeX, allerdings noch eher einzelne Autoren
 * Wie Knuth bei TeX hat der MacFarlane Pandoc auch als Wissenschaftler für 
   seine eigene Publikationstätigkeit entwickelt
 * LIBREAS & Informationspraxis (geplant) nutzen Markdown, um Artikel
   medienneutral bereitzustellen (gibt es weitere?!)
-* Mardown-for-Science / Scholarly Markdown Workshop
+* Markdown-for-Science / Scholarly Markdown Workshop
 * BeyondPDF-Initiativen, um von der Fokussierung auf die Druckversion
   wegzukommen
 * ...
