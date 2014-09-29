@@ -17,6 +17,12 @@ benutzen i.d.R. Latex zur Publikationserstellung. In anderen Fachgebieten wird W
 Verlage ihre eigenen Vorlagen, mit denen die Publikationen zu erstellen sind. Es muss betont werden, dass diese Techniken auf ein druckfertiges Manuskript abzielen. Eine parallele Publikation in einem anderen 
 Format (wie z.b. HTML) wird kaum praktiziert.
 
+Weiterhin besteht und wächst die Notwendigkeit zur kollaborativen Erstellung
+von Manuskripten. Hierfür sind ein Versionierungssystem und ein einfaches Textformat besonders hilfreich, z.B. __git__ und __Markdown__. Mit 
+diesen Tools lassen sich Textänderungen des Koautors sehr leicht nachvollziehen.
+
+Einige Wissenschaftler haben diese Möglichkeiten zu schätzen gelernt und daher eine Initiative gestartet, um Markdown um "wissenschaftliche Elemente" anzureichern, __Scholarly Markdown__.
+
 * Verlage verlangen in der Regel druckfertiges Manuskript
 * In vielen Naturwissenschaften ist LaTeX de-facto Standard.
 * Nachteile der aktuellen Situation
